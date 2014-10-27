@@ -21,10 +21,6 @@
 	"shadow": true,
 	"unused": false,
 	"predef": [
-		"cordova",
-		"StatusBar",
-		"Camera",
-
 		"angular",
 		"_",
 		"rangy",
