@@ -23,7 +23,7 @@ function browserSyncInit(baseDir, files, browser) {
 /* serve 구동 */
 gulp.task('serve', ['watch'], function() {
 	browserSyncInit(
-		['app/', '.tmp'],
+		['app/', '.tmp/'],
 		['.tmp/**/*.js', '.tmp/**/*.css', '.tmp/*.html'],
 		'google chrome'
 	);
