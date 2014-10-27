@@ -8,6 +8,6 @@ var rimraf = require('gulp-rimraf')
 
 /* clean */
 gulp.task('clean', function() {
-	return gulp.src(['./.tmp'], { read: false })
+	return gulp.src(['./.tmp', './.preprecess'], { read: false })
 		.pipe(rimraf({ force: true }))
 })
