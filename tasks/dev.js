@@ -15,6 +15,9 @@ gulp.task('dev', ['install'], function(done) {
 		'clean',
 		'lint',
 		'browserify',
+		'templates',
+		'styles',
+		'inject',
 		//'js',
 		'serve',
 		done

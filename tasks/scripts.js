@@ -30,11 +30,10 @@ gulp.task('preprocess:scripts', function() {
 		.pipe(gulp.dest('.preprocess/js/'))
 })
 
-/* commonJs방식으로 빌드시 browserify 을 이용해야 코드가 깨지지 않는다.?? - test중 */
 gulp.task('browserify', ['preprocess:scripts'], function() {
 	return gulp.src('.preprocess/js/app.js')
 		.pipe(browserify({
 			insertGlobals: true
 		}))
-		.pipe(gulp.dest('.tmp/scripts'))
+		.pipe(gulp.dest('.tmp/js'))
 })
