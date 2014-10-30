@@ -14,11 +14,8 @@ gulp.task('dev', ['install'], function(done) {
 	runSequence(
 		'clean',
 		'lint',
-		'browserify',
-		'templates',
-		'styles',
+		['browserify', 'templates', 'styles'],
 		'inject',
-		//'js',
 		'serve',
 		done
 	);

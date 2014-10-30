@@ -60,5 +60,5 @@ function proxyMiddleware(req, res, next) {
  * The first line activate if and the second one ignored it
  */
 
-//module.exports = [proxyMiddleware];
-module.exports = [];
+module.exports = [proxyMiddleware];
+//module.exports = [];

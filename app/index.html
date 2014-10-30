@@ -3,13 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
+
   <!-- bower:css -->
   <!-- endbower -->
+
 </head>
 <body>
+
   <!-- bower:js -->
   <!-- endbower -->
+
   <script src="js/app.js"></script>
-  <script src="js/templates.js"></script>
+  <script src="templates/templates.js"></script>
+
+  <div ui-view>
+    <a ng-click="goURL('helloWorld')">HelloWorld</a>
+  </div>
+
+  <button ng-click="count = count + 1" ng-init="count=0">
+    Increment
+  </button>
+  <span>
+    count: {{count}}
+  </span>
+
 </body>
 </html>

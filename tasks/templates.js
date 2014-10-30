@@ -20,9 +20,9 @@ gulp.task('templates', function() {
 		}))
 		// html tempalte cache 처리
 		.pipe(templateCache({
-			root: 'js',
+			root: 'templates',
 			module: 'templates',
 			standalone: true
 		}))
-		.pipe(gulp.dest('.tmp/js'))
+		.pipe(gulp.dest('.tmp/templates'))
 })

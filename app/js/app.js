@@ -1,5 +1,22 @@
 'use strict'
 
-require('./github/github.module')
+require('./helloWorld/helloWorld.module')
 
-angular.module('app', [])
+var RootController = require('./root.ctrl')
+
+function config($stateProvider, $urlRouterProvider) {
+
+	$urlRouterProvider.otherwise("/app");
+	$stateProvider
+		.state('app', {
+			url: "/app",
+			controller: 'RootController'
+		})
+}
+
+angular.module('app', [
+	'helloWorld'
+])
+.config(config)
+.controller('RootController', RootController)
+

@@ -5,9 +5,13 @@
 
 var gulp = require('gulp')
 var wiredep = require('wiredep').stream
+var preprocess = require('gulp-preprocess')
 
 gulp.task('inject', function() {
 	return gulp.src('app/index.html')
-		.pipe(wiredep())
+		.pipe(wiredep({
+			directory: 'app/lib'
+		}))
+		.pipe(preprocess())
 		.pipe(gulp.dest('.tmp'))
 })
