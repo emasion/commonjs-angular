@@ -20,7 +20,7 @@ function browserSyncInit(baseDir, files, browser) {
 	});
 }
 
-/* serve 구동 */
+/* serve 구동 - dev */
 gulp.task('serve', ['watch'], function() {
 	browserSyncInit(
 		['.tmp', 'app'],
@@ -29,6 +29,13 @@ gulp.task('serve', ['watch'], function() {
 	);
 })
 
-
+/* serve 구동 - dist */
+gulp.task('serve:dist', ['build'], function() {
+	browserSyncInit(
+		['dist'],
+		null,
+		'google chrome'
+	);
+})
 
 

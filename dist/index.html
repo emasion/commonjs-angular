@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+
+  <script src="assets/styles/vendor.css"></script>
+
+  <script src="assets/styles/main.css"></script>
+
+</head>
+<body>
+
+  <script src="js/vendor.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <script src="templates/templates.js"></script>
+
+  <div ui-view>
+    <a ng-click="goURL('helloWorld')">HelloWorld</a>
+  </div>
+
+  <button ng-click="count = count + 1" ng-init="count=0">Increment</button>
+  <span>
+    count: {{count}}
+  </span>
+
+</body>
+</html>

@@ -15,6 +15,7 @@ function config($stateProvider, $urlRouterProvider) {
 }
 
 angular.module('app', [
+	'templates',
 	'helloWorld'
 ])
 .config(config)

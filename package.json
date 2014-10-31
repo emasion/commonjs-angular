@@ -29,7 +29,12 @@
     "gulp-angular-templatecache": "^1.4.2",
     "gulp-plumber": "^0.6.6",
     "gulp-autoprefixer": "^1.0.1",
-    "wiredep": "^1.8.6"
+    "wiredep": "^1.8.6",
+    "gulp-if": "^1.2.5",
+    "gulp-useref": "^1.0.2",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-imagemin": "^1.2.1",
+    "uglify-save-license": "^0.4.1"
   },
   "engines": {
     "node": ">=0.10.0"

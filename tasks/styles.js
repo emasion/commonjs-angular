@@ -8,7 +8,7 @@ var plumber = require('gulp-plumber')
 var autoprefixer = require('gulp-autoprefixer')
 
 gulp.task('styles', function() {
-	return gulp.src('app/assets/styles/**/.css')
+	return gulp.src('app/assets/styles/**/*.css')
 		.pipe(plumber())
 		.pipe(autoprefixer())
 		.pipe(gulp.dest('.tmp/assets/styles'))
